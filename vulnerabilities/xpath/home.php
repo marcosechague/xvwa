@@ -47,7 +47,6 @@ XPTH injections are fairly similar to SQL injection with a difference that it us
             foreach($result as $row){
                 echo " ";
                 echo "<tr><td valign=\"top\">".$row->getElementsByTagName('ID')->item(0)->nodeValue."</td><td>&nbsp;&nbsp;</td>";
-                echo "<td valign=\"top\"><b>".$row->getElementsByTagName('Name')->item(0)->nodeValue."</b><br>".$row->getElementsByTagName('Desc')->item(0)->nodeValue."</td></tr>";
                 echo "<tr><td colspan=2>&nbsp;</td></tr>";
             }
             echo "</table>";
